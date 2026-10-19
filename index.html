@@ -17,24 +17,6 @@
 .chapter-symbol svg{position:relative;z-index:1;display:block;width:min(100%,250px);max-height:270px;height:auto;overflow:visible;filter:drop-shadow(0 0 12px rgba(150,174,221,.18));transition:transform .45s ease,filter .45s ease}
 .chapter-symbol:hover svg{transform:scale(1.035);filter:drop-shadow(0 0 18px rgba(174,197,245,.34))}
 @media(max-width:760px){.chapter-symbol{min-height:230px;aspect-ratio:auto}.chapter-symbol svg{max-height:220px}}
-
-/* Bird of Night floating music player */
-.music-player{position:fixed;right:22px;bottom:22px;z-index:9999;color:#e8edf8;font-family:inherit}
-.music-toggle{display:flex;align-items:center;gap:10px;max-width:230px;padding:9px 14px 9px 9px;border:1px solid rgba(173,194,231,.3);border-radius:999px;background:rgba(10,16,29,.94);color:inherit;box-shadow:0 8px 28px rgba(0,0,0,.38);backdrop-filter:blur(16px);cursor:pointer;transition:transform .25s,border-color .25s}
-.music-toggle:hover{transform:translateY(-2px);border-color:rgba(190,210,245,.65)}
-.music-cover-mini,.music-cover-large{display:grid;place-items:center;flex-shrink:0;overflow:hidden;background:radial-gradient(circle at 35% 25%,#465777,#172238 55%,#090e18);border:1px solid rgba(180,199,230,.25);color:#dbe6fb}
-.music-cover-mini{width:38px;height:38px;border-radius:50%}.music-cover-mini svg{width:20px;height:20px}
-.music-toggle-text{min-width:0;text-align:left}.music-toggle-title{display:block;font-size:12px;font-weight:600;letter-spacing:.02em;white-space:nowrap}.music-toggle-sub{display:block;margin-top:3px;color:#9eacc5;font-size:10px;white-space:nowrap}
-.music-panel{position:absolute;right:0;bottom:calc(100% + 12px);width:min(320px,calc(100vw - 32px));padding:17px;border:1px solid rgba(173,194,231,.28);border-radius:18px;background:linear-gradient(145deg,rgba(20,30,49,.98),rgba(7,12,22,.98));box-shadow:0 18px 55px rgba(0,0,0,.5);backdrop-filter:blur(18px);opacity:0;visibility:hidden;transform:translateY(9px) scale(.98);transform-origin:bottom right;transition:opacity .22s,transform .22s,visibility .22s}
-.music-player.is-open .music-panel{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
-.music-panel-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;color:#9baecc;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
-.music-close{width:29px;height:29px;border:1px solid rgba(173,194,231,.18);border-radius:50%;background:rgba(255,255,255,.04);color:#dce6f8;cursor:pointer;font-size:17px;line-height:1}
-.music-track{display:flex;align-items:center;gap:13px;margin-bottom:16px}.music-cover-large{width:78px;height:78px;border-radius:12px;box-shadow:0 5px 20px #0005}.music-cover-large svg{width:36px;height:36px}.music-track-info{min-width:0}.music-track-title{margin:0 0 5px;font-size:16px;font-weight:600;color:#f0f4fc}.music-track-artist{margin:0;color:#a7b5cf;font-size:12px}.music-track-note{margin-top:8px;color:#778aa9;font-size:10px;letter-spacing:.08em}
-.music-progress-wrap{margin:8px 0 12px}.music-progress{display:block;width:100%;height:4px;margin:0;accent-color:#bdcce6;cursor:pointer}.music-times{display:flex;justify-content:space-between;margin-top:7px;color:#8e9fbb;font-size:10px;font-variant-numeric:tabular-nums}
-.music-controls{display:flex;align-items:center;justify-content:center;gap:17px;margin:13px 0 4px}.music-control{display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(173,194,231,.18);border-radius:50%;background:rgba(255,255,255,.035);color:#dfe8f8;cursor:pointer}.music-control-main{width:47px;height:47px;background:#dce6f7;color:#111a2a;border:0;box-shadow:0 0 22px rgba(161,186,230,.15)}.music-control svg{width:17px;height:17px}.music-control-main svg{width:21px;height:21px}.music-hint{margin:13px 0 0;text-align:center;color:#7183a0;font-size:10px;line-height:1.5}
-@media(max-width:600px){.music-player{right:12px;bottom:12px}.music-toggle{padding:7px 11px 7px 7px;gap:8px}.music-cover-mini{width:34px;height:34px}.music-panel{width:min(300px,calc(100vw - 24px));padding:14px}.music-cover-large{width:68px;height:68px}}
-@media(prefers-reduced-motion:reduce){.music-toggle,.music-panel{transition:none}}
-
 </style></head>
 <body>
 <nav class="nav" aria-label="Navigasi utama"><a class="brand" href="#top">𓆩 The Aven Kallisto Archive</a><div class="nav-links"><a href="#about">Tentang</a><a href="#chapters">Chapters</a><a href="#symbols">Simbol</a><a href="#glossary">Glosarium</a></div></nav>
@@ -48,58 +30,5 @@
 </div></section>
 <section class="section" id="symbols"><div class="container"><div class="section-head"><div class="eyebrow">03 / Symbolism</div><h2>Bahasa simbol <em>Bird of Night</em></h2><p class="muted">Simbol-simbol ini tidak harus punya satu makna mutlak. Maknanya dibentuk oleh perjalanan Aven dan dapat ditafsirkan pembaca secara personal.</p></div><div class="grid"><article class="card"><h3>☾ Malam</h3><p>Kesendirian, ketakutan, kesedihan, serta ruang batin yang belum berani dijelajahi.</p></article><article class="card"><h3>𓅓 Burung</h3><p>Pemandu antara kesadaran dan kenangan; pengingat bahwa sesuatu yang hilang masih dapat ditemukan.</p></article><article class="card"><h3>✧ Bintang</h3><p>Harapan dan kenangan yang terasa jauh—masih terlihat meski belum dapat digapai.</p></article><article class="card"><h3>◈ Cermin</h3><p>Kejujuran pada diri sendiri dan pertemuan dengan sisi yang selama ini dihindari.</p></article><article class="card"><h3>❧ Bulu</h3><p>Petunjuk, perubahan, dan jejak kecil yang menuntun Aven memahami cerita besarnya.</p></article><article class="card"><h3>☀ Fajar</h3><p>Awal baru yang tumbuh dari penerimaan, bukan dari menghapus masa lalu.</p></article></div><div class="section-head" style="margin-top:48px"><div class="eyebrow">Character arc</div><h2>Perubahan Aven Kallisto</h2></div><div class="timeline"><div class="step"><b>01 · Terasing</b><span>Aven merasa terputus dari dirinya sendiri dan mulai mencari jawaban.</span></div><div class="step"><b>02 · Terbelah</b><span>Ia menghadapi bagian diri yang ditinggalkan demi menghindari rasa sakit.</span></div><div class="step"><b>03 · Terintegrasi</b><span>Ia menerima kenangan dan emosinya sebagai bagian dari kisah hidupnya.</span></div></div></div></section>
 <section class="section" id="glossary"><div class="container"><div class="section-head"><div class="eyebrow">04 / Reference</div><h2>Glosarium & pertanyaan</h2><p class="muted">Istilah utama yang muncul dalam arsip cerita.</p></div><div class="glossary"><div class="term">Aven Kallisto</div><div class="definition">Tokoh utama fiksi dan karakter original untuk roleplay.</div><div class="term">Face claim</div><div class="definition">Figur publik yang dipakai sebagai referensi visual karakter. Dalam proyek ini, Kang Taehyun adalah face claim Aven, bukan tokoh dalam kisah fiksi ini.</div><div class="term">Bird of Night</div><div class="definition">Burung misterius sekaligus simbol pemandu batin, yang muncul saat Aven mulai menghadapi bagian dirinya yang terlupakan.</div><div class="term">The Lost One</div><div class="definition">Bagian diri Aven yang terpisah secara simbolis dari kesadarannya karena ia mencoba menghindari rasa sakit.</div><div class="term">Coming home</div><div class="definition">Kembali pada diri sendiri melalui penerimaan, bukan kembali ke lokasi tertentu.</div></div><div style="margin-top:30px"><details><summary>Apakah Aven benar-benar kehilangan jiwanya?</summary><p>Tidak secara harfiah. “Kehilangan jiwa” adalah metafora untuk rasa terasing dari emosi, identitas, dan hal-hal yang membuat seseorang merasa utuh.</p></details><details><summary>Apakah malam dalam cerita ini sesuatu yang jahat?</summary><p>Tidak. Pada awalnya Aven menganggap malam sebagai ancaman, tetapi kemudian ia memahami bahwa kegelapan juga bisa menjadi ruang untuk mengenali hal-hal yang ia hindari.</p></details><details><summary>Apakah akhir cerita berarti Aven sudah sembuh sepenuhnya?</summary><p>Tidak harus. Akhir cerita menandai perubahan sikap: Aven tidak lagi berusaha menghapus masa lalu. Ia masih bisa merasa sedih, tetapi ia tidak perlu meninggalkan dirinya sendiri untuk bertahan.</p></details><details><summary>Apa pesan utama Bird of Night?</summary><p>Kita tidak selalu bisa memilih apa yang pernah melukai kita, tetapi kita bisa belajar bagaimana memperlakukan diri sendiri setelahnya. Menerima rasa sakit bukan berarti menyetujuinya; itu berarti mengakui bahwa pengalaman tersebut adalah bagian dari hidup kita.</p></details></div></div></section>
-</main>
-<div class="music-player" id="musicPlayer">
-  <button class="music-toggle" id="musicToggle" type="button" aria-expanded="false" aria-controls="musicPanel" aria-label="Buka pemutar musik">
-    <span class="music-cover-mini" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6m0 6v6M3 12h6m6 0h6" opacity=".5"/></svg></span>
-    <span class="music-toggle-text"><span class="music-toggle-title">Bird of Night</span><span class="music-toggle-sub">Taehyun (TXT) · Music</span></span>
-  </button>
-  <section class="music-panel" id="musicPanel" aria-label="Pemutar musik" aria-hidden="true">
-    <div class="music-panel-top"><span>Bird of Night</span><button class="music-close" id="musicClose" type="button" aria-label="Tutup pemutar musik">×</button></div>
-    <div class="music-track">
-      <div class="music-cover-large" aria-label="Tempat cover album"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6m0 6v6M3 12h6m6 0h6" opacity=".5"/><path d="M5 5l14 14M19 5L5 19" opacity=".16"/></svg></div>
-      <div class="music-track-info"><h3 class="music-track-title">Bird of Night</h3><p class="music-track-artist">Taehyun (TXT)</p><div class="music-track-note">✦ A SOUNDTRACK FOR THE NIGHT</div></div>
-    </div>
-    <div class="music-progress-wrap"><input class="music-progress" id="musicProgress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu"><div class="music-times"><span id="musicCurrent">00:00</span><span id="musicDuration">--:--</span></div></div>
-    <div class="music-controls">
-      <button class="music-control" id="musicRestart" type="button" aria-label="Putar dari awal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 9 0 1 1 2.6 6.4"/><path d="M3 4v7h7"/></svg></button>
-      <button class="music-control music-control-main" id="musicPlay" type="button" aria-label="Putar musik"><svg id="musicPlayIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-      <button class="music-control" id="musicMute" type="button" aria-label="Bisukan suara"><svg id="musicMuteIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/></svg></button>
-    </div>
-    <p class="music-hint">Musik hanya diputar setelah pengunjung menekan tombol play.</p>
-  </section>
-  <audio id="birdOfNightAudio" preload="metadata" src="birdofnight.mp3"></audio>
-</div>
-<script>
-(() => {
-  const player = document.getElementById('musicPlayer');
-  const toggle = document.getElementById('musicToggle');
-  const panel = document.getElementById('musicPanel');
-  const close = document.getElementById('musicClose');
-  const audio = document.getElementById('birdOfNightAudio');
-  const play = document.getElementById('musicPlay');
-  const playIcon = document.getElementById('musicPlayIcon');
-  const progress = document.getElementById('musicProgress');
-  const current = document.getElementById('musicCurrent');
-  const duration = document.getElementById('musicDuration');
-  const mute = document.getElementById('musicMute');
-  const muteIcon = document.getElementById('musicMuteIcon');
-  const restart = document.getElementById('musicRestart');
-  const fmt = seconds => { if (!Number.isFinite(seconds)) return '--:--'; const m=Math.floor(seconds/60); const s=Math.floor(seconds%60); return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'); };
-  const setOpen = open => { player.classList.toggle('is-open',open); toggle.setAttribute('aria-expanded',String(open)); panel.setAttribute('aria-hidden',String(!open)); };
-  const updatePlay = () => { const playing=!audio.paused; play.setAttribute('aria-label',playing?'Jeda musik':'Putar musik'); playIcon.innerHTML=playing?'<path d="M7 5h4v14H7zM14 5h4v14h-4z"/>':'<path d="M8 5v14l11-7z"/>'; };
-  toggle.addEventListener('click',()=>setOpen(!player.classList.contains('is-open')));
-  close.addEventListener('click',()=>setOpen(false));
-  play.addEventListener('click',async()=>{ if(audio.paused){try{await audio.play();}catch(e){setOpen(true);}}else{audio.pause();} updatePlay(); });
-  audio.addEventListener('play',updatePlay); audio.addEventListener('pause',updatePlay); audio.addEventListener('ended',updatePlay);
-  audio.addEventListener('loadedmetadata',()=>{duration.textContent=fmt(audio.duration);});
-  audio.addEventListener('timeupdate',()=>{current.textContent=fmt(audio.currentTime);if(Number.isFinite(audio.duration)&&audio.duration>0)progress.value=String(audio.currentTime/audio.duration*100);});
-  progress.addEventListener('input',()=>{if(Number.isFinite(audio.duration)&&audio.duration>0)audio.currentTime=(Number(progress.value)/100)*audio.duration;});
-  restart.addEventListener('click',()=>{audio.currentTime=0;if(audio.paused)audio.play().catch(()=>{});});
-  mute.addEventListener('click',()=>{audio.muted=!audio.muted;mute.setAttribute('aria-label',audio.muted?'Nyalakan suara':'Bisukan suara');muteIcon.innerHTML=audio.muted?'<path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6m0-6-5 6"/>':'<path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/>';});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&player.classList.contains('is-open'))setOpen(false);});
-})();
-</script>
-
-<footer class="footer"><div class="sig">𓆩 Bird of Night 𓆪</div><div>An original fictional archive for Aven Kallisto</div><div style="margin-top:8px">“The bird never came to take him away. It came to show him the way back.”</div><a class="backtop" href="#top">↑ Kembali ke atas</a></footer>
+</main><footer class="footer"><div class="sig">𓆩 Bird of Night 𓆪</div><div>An original fictional archive for Aven Kallisto</div><div style="margin-top:8px">“The bird never came to take him away. It came to show him the way back.”</div><a class="backtop" href="#top">↑ Kembali ke atas</a></footer>
 </body></html>
