@@ -5,6 +5,12 @@
 <meta name="description" content="Ensiklopedia Bird of Night — kisah Aven Kallisto dalam tiga chapter tentang kehilangan, ingatan, dan pulang kepada diri sendiri.">
 <title>Bird of Night — The Aven Kallisto Archive</title>
 <style>
+  .music-cover-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 :root{--bg:#090b12;--panel:#10141f;--text:#ececf3;--muted:#a1a7ba;--silver:#cbd4e8;--blue:#8295c9;--line:rgba(203,212,232,.16);--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#1b2340 0%,transparent 36%),var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75}a{color:inherit;text-decoration:none}::selection{background:#aebbe0;color:#080a10}
 .nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(18px,5vw,72px);background:rgba(9,11,18,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--silver);font-weight:700}.nav-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}.nav-links a:hover{color:white}
@@ -34,7 +40,12 @@
 .music-controls{display:flex;align-items:center;justify-content:center;gap:17px;margin:13px 0 4px}.music-control{display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(173,194,231,.18);border-radius:50%;background:rgba(255,255,255,.035);color:#dfe8f8;cursor:pointer}.music-control-main{width:47px;height:47px;background:#dce6f7;color:#111a2a;border:0;box-shadow:0 0 22px rgba(161,186,230,.15)}.music-control svg{width:17px;height:17px}.music-control-main svg{width:21px;height:21px}.music-hint{margin:13px 0 0;text-align:center;color:#7183a0;font-size:10px;line-height:1.5}
 @media(max-width:600px){.music-player{right:12px;bottom:12px}.music-toggle{padding:7px 11px 7px 7px;gap:8px}.music-cover-mini{width:34px;height:34px}.music-panel{width:min(300px,calc(100vw - 24px));padding:14px}.music-cover-large{width:68px;height:68px}}
 @media(prefers-reduced-motion:reduce){.music-toggle,.music-panel{transition:none}}
-
+.music-cover-mini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
 </style></head>
 <body>
 <nav class="nav" aria-label="Navigasi utama"><a class="brand" href="#top">𓆩 The Aven Kallisto Archive</a><div class="nav-links"><a href="#about">Tentang</a><a href="#chapters">Chapters</a><a href="#symbols">Simbol</a><a href="#glossary">Glosarium</a></div></nav>
@@ -51,13 +62,17 @@
 </main>
 <div class="music-player" id="musicPlayer">
   <button class="music-toggle" id="musicToggle" type="button" aria-expanded="false" aria-controls="musicPanel" aria-label="Buka pemutar musik">
-    <span class="music-cover-mini" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6m0 6v6M3 12h6m6 0h6" opacity=".5"/></svg></span>
+   <span class="music-cover-mini">
+  <img src="cover.jpg" alt="Cover lagu">
+</span>
     <span class="music-toggle-text"><span class="music-toggle-title">Bird of Night</span><span class="music-toggle-sub">Taehyun (TXT) · Music</span></span>
   </button>
   <section class="music-panel" id="musicPanel" aria-label="Pemutar musik" aria-hidden="true">
     <div class="music-panel-top"><span>Bird of Night · Soundtrack</span><button class="music-close" id="musicClose" type="button" aria-label="Tutup pemutar musik">×</button></div>
     <div class="music-track">
-      <div class="music-cover-large" aria-label="Tempat cover album"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6m0 6v6M3 12h6m6 0h6" opacity=".5"/><path d="M5 5l14 14M19 5L5 19" opacity=".16"/></svg></div>
+     <div class="music-cover-large">
+  <img src="cover.jpg" alt="Cover Bird of Night">
+</div>
       <div class="music-track-info"><h3 class="music-track-title">Bird of Night</h3><p class="music-track-artist">Taehyun (TXT)</p><div class="music-track-note">✦ A SOUNDTRACK FOR THE NIGHT</div></div>
     </div>
     <div class="music-progress-wrap"><input class="music-progress" id="musicProgress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu"><div class="music-times"><span id="musicCurrent">00:00</span><span id="musicDuration">--:--</span></div></div>
@@ -68,7 +83,7 @@
     </div>
     <p class="music-hint">Musik hanya diputar setelah pengunjung menekan tombol play.</p>
   </section>
-  <audio id="birdOfNightAudio" preload="metadata" src="music/bird-of-night.mp3"></audio>
+  <audio id="birdOfNightAudio" preload="metadata" src="birdofnight.mp3"></audio>
 </div>
 <script>
 (() => {
